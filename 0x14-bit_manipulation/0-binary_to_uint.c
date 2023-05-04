@@ -1,5 +1,5 @@
 #include "main.h"
-
+Jacque
 /**
  * binary_to_uint - convert binary number to unint
  * @b: pointer to character array

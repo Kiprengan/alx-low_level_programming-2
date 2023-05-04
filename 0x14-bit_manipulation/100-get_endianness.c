@@ -1,5 +1,5 @@
 #include "main.h"
-
+Jacque
 /**
  * get_endianness - Checks the endianness.
  *
