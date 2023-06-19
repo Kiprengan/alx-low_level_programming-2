@@ -1,22 +1,65 @@
-#include <unistd.h>
-#include <string.h>
+int add(int i, int k);
+int sub(int i, int k);
+int mul(int i, int k);
+int div(int i, int k);
+int mod(int i, int k);
 
-int rand()
+/**
+* add - adds two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the sum
+*/
+
+int add(int i, int k)
 {
-	static int ct = -1;
+	return (i + k);
+}
 
-	ct++;
-	if (ct == 0)
-		return 8;
-	if (ct == 1)
-		return 8;
-	if (ct == 2)
-		return 7;
-	if (ct == 3)
-		return 9;
-	if (ct == 4)
-		return 23;
-	if (ct == 5)
-		return 74;
-	return ct * ct % 30000;
+/**
+* sub - subtracts two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the subtract
+*/
+
+int sub(int i, int k)
+{
+	return (i - k);
+}
+
+/**
+* mul - multiplies two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the multiple
+*/
+
+int mul(int i, int k)
+{
+	return (i * k);
+}
+
+/**
+* div - divideds two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the dividend integer
+*/
+
+int div(int i, int k)
+{
+	return (i / k);
+}
+
+/**
+* mod - divideds two integers
+* @i: first integer to add
+* @k: second integer to add
+* Return: the dividend integer
+*/
+
+int mod(int i, int k)
+{
+	return (i % k);
 }
